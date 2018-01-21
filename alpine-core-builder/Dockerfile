@@ -7,5 +7,7 @@ ENV repositoryurl "http://dl-cdn.alpinelinux.org/alpine/v3.7"
 
 RUN apk add --no-cache bash tzdata xz
 
+VOLUME [ "/target" ]
+
 ENTRYPOINT ["/createCoreAlpine.sh"]
 

@@ -19,6 +19,4 @@ rm -f "$rootfs/var/cache/apk"/*
 # Security: Disable root password!
 sed -ie 's/^root::/root:!:/' "$rootfs/etc/shadow"
 
-tar -J -f rootfs.tar.xz --numeric-owner --exclude='dev/*' -C "$rootfs" -c .
-
-cat rootfs.tar.xz
+tar -J -f /target/rootfs.tar.xz --numeric-owner --exclude='dev/*' -C "$rootfs" -c .
