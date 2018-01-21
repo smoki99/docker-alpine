@@ -15,5 +15,5 @@ RUN apk add --update --no-cache curl bash libcap && \
 
 COPY root /
 
-ENTRYPOINT ["/init.sh"]
+ENTRYPOINT [/init.sh]
 CMD []
