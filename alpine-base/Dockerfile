@@ -1,4 +1,4 @@
-FROM smoki99/alpine:latest
+FROM smoki99/alpine-core:latest
 MAINTAINER Christian Mueller (http://github.com/smoki99/docker-alpine)
 
 ENV GO_DNSMASQ_VERSION=1.0.7
